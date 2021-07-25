@@ -5,6 +5,8 @@ import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
 // import 'package:geodesy/geodesy.dart';
 import 'package:latlong2/latlong.dart';
 
+import '../tokens.dart';
+
 class MapPage extends StatefulWidget {
   const MapPage({Key key}) : super(key: key);
 
@@ -151,7 +153,7 @@ class _MapPageState extends State<MapPage> {
                 "?access_token={accessToken}",
             additionalOptions: {
               'accessToken':
-                  'ACCESSTOKEN',
+                  '$MAPBOX_TOKEN',
             },
             // urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             // subdomains: ['a', 'b', 'c'],
